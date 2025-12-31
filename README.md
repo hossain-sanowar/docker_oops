@@ -21,10 +21,10 @@ docker images -a                            # Show all images on this machine
 docker rmi <imagename>                      # Remove the specified image from this machine
 docker rmi $(docker images -q)              # Remove all images from this machine
 Docker Custom image
-docker build -t sanowarhossain/calapp:latest .
+docker build -t sanowarhossain/calapp:latest . #build docker image
 
-docker run -p 8080:8080 sanowarhossain/calapp:latest
-docker run -d -p 8080:8080 sanowarhossain/calapp:latest
+docker run -p 8080:8080 sanowarhossain/calapp:latest # run docker container
+docker run -d -p 8080:8080 sanowarhossain/calapp:latest # run docker container with detach mode
 ````
 
 Push to Docker Hub:
